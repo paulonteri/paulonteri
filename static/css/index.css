@@ -1,0 +1,17 @@
+/* DISPLAY ON MOBILE */
+.show-desktop {
+    display: none !important;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+@media only screen and (min-width: 550px) {
+    .show-desktop {
+        display: block !important;
+    }
+    .hide-desktop {
+        display: none !important;
+    }
+}
