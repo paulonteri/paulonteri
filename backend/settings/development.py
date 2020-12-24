@@ -125,6 +125,4 @@ CACHEOPS = {
     # 'name_app.*': None,
 }
 
-# HEROKU
-# Activate Django-Heroku.
-django_heroku.settings(locals())
+

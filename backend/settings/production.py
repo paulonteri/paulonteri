@@ -262,7 +262,4 @@ REST_KNOX = {
 #     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-# HEROKU
-if os.environ.get('HEROKU'):
-    # Activate Django-Heroku.
-    django_heroku.settings(locals())
+
