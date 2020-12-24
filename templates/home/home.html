@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
-  <body>
-    Home Page
-    <p>Welcome</p>
-    <div>
-      <a href="/login">Login</a>
-    </div>
-    <p>or</p>
-    <div>
-      <a href="/signup">Register</a>
-    </div>
-  </body>
-</html>
+{% extends "layout/basic_layout.html" %}
+{% block content %}
+
+{% include "home/partials/_about.html" %}
+{% endblock %}
