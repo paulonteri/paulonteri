@@ -49,7 +49,7 @@ class Job(models.Model):
         ordering = ['-start_date']
 
     def clean(self):
-        if self.end_date and (self.start_date > self.end_date):
+        if self.end_date is not None and (self.start_date > self.end_date):
             raise ValidationError("End date cannot be before start date!")
 
     def save(self, *args, **kwargs):
