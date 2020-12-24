@@ -70,3 +70,23 @@ class Project(models.Model):
 
     def __str__(self):
         return f"{self.name} {self.short_description}"
+
+
+class Article(models.Model):
+    name = models.CharField(unique=True, max_length=20)
+    description = models.CharField(max_length=255)
+    sub_categories = models.ManyToManyField(SubCategory)
+    image = models.ImageField(null=True, blank=True)
+    weight = models.IntegerField(
+        default=0, help_text="level of importance")  # level of importance
+    url = models.URLField()
+    date_posted = models.DateField()
+    #
+    time_added = models.DateTimeField(auto_now_add=True)
+    time_last_edited = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['weight', '-date_posted']
+
+    def __str__(self):
+        return self.name
