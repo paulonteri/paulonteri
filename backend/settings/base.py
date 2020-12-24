@@ -81,13 +81,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
-print(MEDIA_ROOT)
 
 # Static
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),
 ]
-print(STATICFILES_DIRS)
 STATIC_URL = '/static/'
 
 # Internationalization
