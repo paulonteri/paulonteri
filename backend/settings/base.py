@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'knox',
     # local apps
     'accounts',
+    'work',
     # always last. Used to auto delete files.
     'django_cleanup.apps.CleanupConfig',
 ]
@@ -79,12 +80,14 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Media
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, "/media")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+print(MEDIA_ROOT)
 
 # Static
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),
 ]
+print(STATICFILES_DIRS)
 STATIC_URL = '/static/'
 
 # Internationalization

@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Company, Task, Job
 
-# Register your models here.
+admin.site.register(Company)
+admin.site.register(Task)
+admin.site.register(Job)
