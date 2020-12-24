@@ -41,6 +41,7 @@ class Job(models.Model):
     start_date = models.DateField()
     end_date = models.DateField(null=True, blank=True)
     is_public = models.BooleanField(default=True)  # should it be shown?
+    is_volunteer = models.BooleanField(default=False)
     #
     time_added = models.DateTimeField(auto_now_add=True)
     time_last_edited = models.DateTimeField(auto_now=True)
