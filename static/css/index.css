@@ -1,17 +1,65 @@
 /* DISPLAY ON MOBILE */
 .show-desktop {
-    display: none !important;
+  display: none !important;
 }
 
-.mobile-nav{
-    display: none;
+.mobile-nav {
+  display: none;
+}
+
+.project-card {
+  width: 100%;
+}
+
+.project-image {
+  height: 270px;
+  width: 270px;
 }
 
 @media only screen and (min-width: 550px) {
-    .show-desktop {
-        display: block !important;
-    }
-    .hide-desktop {
-        display: none !important;
-    }
+  .show-desktop {
+    display: block !important;
+  }
+  .hide-desktop {
+    display: none !important;
+  }
+
+  .project-image {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .project-card {
+    width: 220px !important;
+  }
+  .project-image {
+    height: 220px;
+    width: 220px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .project-card {
+    width: 250px !important;
+  }
+  .project-image {
+    height: 250px;
+    width: 250px;
+  }
+
+  .featured-projects {
+    padding: 0 5% !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
